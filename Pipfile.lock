@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "17c7c74887dc9e8f226ccdb781b731454c27463739ea13ff570005bbcf2f70d5"
+            "sha256": "342ec91d1b751aff174d7f84d4ce9107314af1b3d79f25bbd1e0fa6b6e32244f"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -73,5 +73,28 @@
             "version": "==1.11.0"
         }
     },
-    "develop": {}
+    "develop": {
+        "bumpversion": {
+            "hashes": [
+                "sha256:6753d9ff3552013e2130f7bc03c1007e24473b4835952679653fb132367bdd57",
+                "sha256:6744c873dd7aafc24453d8b6a1a0d6d109faf63cd0cd19cb78fd46e74932c77e"
+            ],
+            "version": "==0.5.3"
+        },
+        "invoke": {
+            "hashes": [
+                "sha256:a90acf9fd9d863dba4545b369c4ca547de4ca76228ca52c78cf224e7eecce0e9",
+                "sha256:66434bf48dcffea232e8ada3a7e252cc10928871c46f39ece123c6a5753c0d0c",
+                "sha256:6c572a09849e1452ff65c674d4531a940366278194af86315e458f8457192274"
+            ],
+            "version": "==0.22.0"
+        },
+        "wheel": {
+            "hashes": [
+                "sha256:e721e53864f084f956f40f96124a74da0631ac13fbbd1ba99e8e2b5e9cafdf64",
+                "sha256:9515fe0a94e823fd90b08d22de45d7bde57c90edce705b22f5e1ecf7e1b653c8"
+            ],
+            "version": "==0.30.0"
+        }
+    }
 }
