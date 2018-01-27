@@ -37,7 +37,10 @@ def cli(context):
 def main(input, output, extra_context):
     chunk = input.read()
     post = frontmatter.loads(chunk)
-    post.metadata.update(dict(extra_context))
+
+    if extra_context:
+        post.metadata.update(extra_context)
+
     frontmatter.dump(post, output)
 
 
