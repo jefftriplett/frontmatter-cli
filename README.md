@@ -12,7 +12,7 @@ $ pipenv install
 
 ```bash
 $ python frontmatter_cli --help
-Usage: frontmatter_cli [OPTIONS] COMMAND [ARGS]...
+Usage: frontmatter-cli [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --help  Show this message and exit.
@@ -21,7 +21,7 @@ Commands:
   main*
 
 ## Echo'ing text as Frontmatter
-$ echo "Hello World!" | python frontmatter-cli --title="My New Blog Post" - -
+$ echo "Hello World!" | frontmatter-cli --title="My New Blog Post" - -
 ---
 title: My New Blog Post
 ---
