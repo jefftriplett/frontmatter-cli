@@ -32,8 +32,8 @@ def cli(context):
 @cli.command(context_settings=dict(ignore_unknown_options=True,))
 @click.version_option(prog_name='frontmatter-cli', version=__version__)
 @click.argument('extra_context', nargs=-1, callback=validate_extra_context)
-@click.argument('input', type=click.File('rb'))
-@click.argument('output', type=click.File('wb'))
+@click.argument('input', type=click.File('rb'), default='-')
+@click.argument('output', type=click.File('wb'), default='-')
 def main(input, output, extra_context):
     chunk = input.read()
     post = frontmatter.loads(chunk)
