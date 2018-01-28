@@ -1,6 +1,6 @@
 __author__ = 'Jeff Triplett'
 __email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 from .cli import cli  # NOQA
 

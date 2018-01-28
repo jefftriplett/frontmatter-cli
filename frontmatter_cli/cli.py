@@ -7,7 +7,7 @@ from click_default_group import DefaultGroup
 
 __author__ = 'Jeff Triplett'
 __email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 
 def validate_extra_context(ctx, param, value):
