@@ -4,6 +4,8 @@
 import os
 import sys
 
+from pathlib import Path
+
 try:
     from setuptools import setup
 except ImportError:
@@ -22,8 +24,8 @@ if sys.argv[-1] == "publish":
     print("  git push --tags")
     sys.exit()
 
-readme = open("README.md").read()
-history = open("HISTORY.md").read()
+readme = Path("README.md").read_text()
+history = Path("HISTORY.md").read_text()
 
 install_requires = [
     "click",
@@ -40,7 +42,12 @@ setup(
     author_email="jeff.triplett@gmail.com",
     url="https://github.com/jefftriplett/frontmatter-cli",
     packages=["frontmatter_cli",],
-    entry_points={"console_scripts": ["frontmatter-cli = frontmatter_cli:cli",]},
+    entry_points={
+        "console_scripts": [
+            "frontmatter = frontmatter_cli:cli",
+            "frontmatter-cli = frontmatter_cli:cli",
+        ]
+    },
     install_requires=install_requires,
     license="BSD",
     zip_safe=False,
@@ -52,8 +59,8 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
     ],
 )
