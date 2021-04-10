@@ -1,0 +1,7 @@
+click
+click-default-group
+python-frontmatter
+
+bumpversion
+invoke
+wheel
