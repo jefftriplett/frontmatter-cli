@@ -29,7 +29,11 @@ def cli(context):
     pass
 
 
-@cli.command(context_settings=dict(ignore_unknown_options=True,))
+@cli.command(
+    context_settings=dict(
+        ignore_unknown_options=True,
+    )
+)
 @click.version_option(prog_name="frontmatter-cli", version=__version__)
 @click.argument("extra_context", nargs=-1, callback=validate_extra_context)
 @click.argument("input", type=click.File("rb"), default="-")
