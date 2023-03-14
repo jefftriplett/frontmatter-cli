@@ -4,18 +4,19 @@ This is a very early WIP project. My goal is to make working with Frontmatter a 
 
 ## Install
 
-```bash
-$ pipenv install
+```shell
+$ python -m pip install frontmatter-cli
 ```
 
 ## Usage
 
-```bash
-$ python frontmatter_cli --help
-Usage: frontmatter-cli [OPTIONS] COMMAND [ARGS]...
+```shell
+$ frontmatter-cli --help
+Usage: frontmatter-cli [OPTIONS] [EXTRA_CONTEXT]... [INPUT] [OUTPUT]
 
 Options:
-  --help  Show this message and exit.
+  --version  Show the version and exit.
+  --help     Show this message and exit.
 
 Commands:
   main*
