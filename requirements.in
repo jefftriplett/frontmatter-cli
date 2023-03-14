@@ -2,6 +2,8 @@ click
 click-default-group
 python-frontmatter
 
-bumpversion
-invoke
-wheel
+black
+blacken-docs
+build
+bumpver
+twine
