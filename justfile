@@ -12,8 +12,11 @@
 @build:
     python -m build
 
-@bump *ARGS="--dry":
+@bump *ARGS:
     bumpver update {{ ARGS }}
+
+@bump-dry *ARGS:
+    just bump --dry {{ ARGS }}
 
 @check:
     twine check dist/*
