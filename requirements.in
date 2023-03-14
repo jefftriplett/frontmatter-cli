@@ -2,8 +2,6 @@ click
 click-default-group
 python-frontmatter
 
-black
-blacken-docs
 build
 bumpver
 twine

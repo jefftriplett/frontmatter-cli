@@ -5,6 +5,7 @@
     just --fmt --unstable
 
 @bootstrap:
+    pip install --upgrade pip pip-tools
     pip install --requirement=requirements.in --upgrade
     pre-commit autoupdate
 
@@ -22,6 +23,9 @@
 
 @pip-compile:
     pip-compile
+
+@push:
+    git push origin --all
 
 @test:
     pytest
