@@ -4,6 +4,7 @@ import click
 import frontmatter
 
 from click_default_group import DefaultGroup
+from pydash import set_
 
 __author__ = "Jeff Triplett"
 __email__ = "jeff.triplett@gmail.com"
@@ -12,7 +13,6 @@ __version__ = "2023.3.1"
 
 def validate_extra_context(ctx, param, value):
     """Validate extra context."""
-
     for key in value:
         if "=" not in key:
             raise click.BadParameter(
@@ -29,11 +29,7 @@ def cli(context):
     pass
 
 
-@cli.command(
-    context_settings=dict(
-        ignore_unknown_options=True,
-    )
-)
+@cli.command(context_settings=dict(ignore_unknown_options=True))
 @click.version_option(prog_name="frontmatter-cli", version=__version__)
 @click.argument("extra_context", nargs=-1, callback=validate_extra_context)
 @click.argument("input", type=click.File("rb"), default="-")
@@ -43,7 +39,8 @@ def main(input, output, extra_context):
     post = frontmatter.loads(chunk)
 
     if extra_context:
-        post.metadata.update(extra_context)
+        for key, value in extra_context.items():
+            set_(post.metadata, key, value)
 
     frontmatter.dump(post, output)
 
