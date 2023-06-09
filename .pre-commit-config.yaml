@@ -21,7 +21,7 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: 23.3.0
     hooks:
       - id: black
         alias: autoformat
@@ -30,7 +30,7 @@ repos:
     hooks:
       - id: blacken-docs
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: 'v0.0.255'
+    rev: 'v0.0.272'
     hooks:
       - id: ruff
         alias: autoformat
