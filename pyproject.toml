@@ -35,9 +35,11 @@ dependencies = [
   "python-frontmatter",
 ]
 [project.optional-dependencies]
-build = [
+dev = [
   "build",
   "bumpver",
+  "pip-tools",
+  "pre-commit",
   "twine",
 ]
 [project.urls]
