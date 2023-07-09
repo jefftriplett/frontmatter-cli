@@ -8,7 +8,7 @@ from pydash import set_
 
 __author__ = "Jeff Triplett"
 __email__ = "jeff.triplett@gmail.com"
-__version__ = "2023.7.4"
+__version__ = "2023.7.5"
 
 
 def validate_extra_context(ctx, param, value):
