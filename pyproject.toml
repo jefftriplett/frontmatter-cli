@@ -56,11 +56,17 @@ include-package-data = false
 
 [tool.ruff]
 # Enable Pyflakes `E` and `F` codes by default.
-select = ["E", "F"]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "I",   # isort
+  "UP",  # pyupgrade
+  "TRY", # tryceratops
+]
 ignore = ["E501", "E741"] # temporary
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
-fixable = ["A", "B", "C", "D", "E", "F"]
+fixable = ["A", "B", "C", "D", "E", "F", "I", "UP"]
 unfixable = []
 
 # Exclude a variety of commonly ignored directories.
