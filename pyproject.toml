@@ -43,7 +43,7 @@ build = [
 [project.urls]
 Homepage = "https://github.com/jefftriplett/frontmatter-cli"
 Issues = "https://github.com/jefftriplett/frontmatter-cli/issues"
-"Source Code" = "https://github.com/jefftriplett/frontmatter-cli"
+Source = "https://github.com/jefftriplett/frontmatter-cli"
 [project.scripts]
 frontmatter = "frontmatter_cli:cli"
 frontmatter-cli = "frontmatter_cli:cli"
