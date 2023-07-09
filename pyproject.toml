@@ -35,6 +35,12 @@ dependencies = [
   "pydash",
   "python-frontmatter",
 ]
+[project.optional-dependencies]
+build = [
+  "build",
+  "bumpver",
+  "twine",
+]
 [project.urls]
 "Bug Tracker" = "https://github.com/jefftriplett/frontmatter-cli/issues"
 Homepage = "https://github.com/jefftriplett/frontmatter-cli"
