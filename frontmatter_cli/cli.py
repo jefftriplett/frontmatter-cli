@@ -43,7 +43,3 @@ def main(input, output, extra_context):
             set_(post.metadata, key, value)
 
     frontmatter.dump(post, output)
-
-
-if __name__ == "__main__":
-    cli()
