@@ -8,6 +8,7 @@ requires = [
 name = "frontmatter-cli"
 version = "2023.7.2"
 description = "Frontmatter CLI tool to make working with frontmatter easier."
+readme = "README.md"
 keywords = [
   "frontmatter",
   "frontmatter-cli",
@@ -34,9 +35,6 @@ dependencies = [
   "pydash",
   "python-frontmatter",
 ]
-[project.readme]
-file = "README.md"
-content-type = "text/markdown"
 [project.urls]
 "Bug Tracker" = "https://github.com/jefftriplett/frontmatter-cli/issues"
 Homepage = "https://github.com/jefftriplett/frontmatter-cli"
