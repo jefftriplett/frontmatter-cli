@@ -1,3 +1,55 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=61.2",
+]
+
+[project]
+name = "frontmatter-cli"
+version = "2023.6.1"
+description = "Frontmatter CLI tool to make working with frontmatter easier."
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+keywords = [
+  "frontmatter",
+  "frontmatter-cli",
+]
+license = {text = "BSD-3-Clause"}
+authors = [{name = "Jeff Triplett", email = "jeff.triplett@gmail.com"}]
+requires-python = ">=3.7"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Framework :: Django",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "click",
+  "click-default-group",
+  "pydash",
+  "python-frontmatter",
+]
+[project.urls]
+Homepage = "https://github.com/jefftriplett/frontmatter-cli"
+[project.scripts]
+frontmatter = "frontmatter_cli:cli"
+frontmatter-cli = "frontmatter_cli:cli"
+
+[tool.setuptools]
+packages = ["frontmatter_cli"]
+zip-safe = false
+license-files = ["LICENSE"]
+include-package-data = false
+
 [tool.ruff]
 # Enable Pyflakes `E` and `F` codes by default.
 select = ["E", "F"]
@@ -43,6 +95,12 @@ target-version = "py311"
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
 
+[tool.wheel]
+universal = "1"
+
+[tool.distutils.bdist_wheel]
+universal = 1
+
 [tool.bumpver]
 current_version = "2023.6.1"
 version_pattern = "YYYY.MM.INC1"
@@ -58,8 +116,4 @@ tag = true
 
 "frontmatter_cli/cli.py" = [
     '__version__ = "{version}"',
-]
-
-"setup.cfg" = [
-    'version = {version}',
 ]
