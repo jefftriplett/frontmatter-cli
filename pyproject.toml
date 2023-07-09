@@ -108,5 +108,5 @@ tag = true
     '__version__ = "{version}"',
 ]
 "pyproject.toml" = [
-  'version = "2023.6.1"',
+    'version = "{version}"',
 ]
