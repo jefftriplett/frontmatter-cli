@@ -107,6 +107,6 @@ tag = true
 "frontmatter_cli/cli.py" = [
     '__version__ = "{version}"',
 ]
-"frontmatter_cli/pyproject.toml" = [
+"pyproject.toml" = [
   'version = "2023.6.1"',
 ]
