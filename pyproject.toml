@@ -42,8 +42,8 @@ build = [
   "twine",
 ]
 [project.urls]
-"Bug Tracker" = "https://github.com/jefftriplett/frontmatter-cli/issues"
 Homepage = "https://github.com/jefftriplett/frontmatter-cli"
+Issues = "https://github.com/jefftriplett/frontmatter-cli/issues"
 "Source Code" = "https://github.com/jefftriplett/frontmatter-cli"
 [project.scripts]
 frontmatter = "frontmatter_cli:cli"
