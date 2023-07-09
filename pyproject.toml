@@ -8,17 +8,13 @@ requires = [
 name = "frontmatter-cli"
 version = "2023.7.1"
 description = "Frontmatter CLI tool to make working with frontmatter easier."
-[project.readme]
-file = "README.md"
-content-type = "text/markdown"
-
 keywords = [
   "frontmatter",
   "frontmatter-cli",
 ]
 license = {text = "BSD-3-Clause"}
 authors = [{name = "Jeff Triplett", email = "jeff.triplett@gmail.com"}]
-requires-python = ">=3.7"
+requires-python = ">3.7"
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Framework :: Django",
@@ -38,8 +34,13 @@ dependencies = [
   "pydash",
   "python-frontmatter",
 ]
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
 [project.urls]
+"Bug Tracker" = "https://github.com/jefftriplett/frontmatter-cli/issues"
 Homepage = "https://github.com/jefftriplett/frontmatter-cli"
+"Source Code" = "https://github.com/jefftriplett/frontmatter-cli"
 [project.scripts]
 frontmatter = "frontmatter_cli:cli"
 frontmatter-cli = "frontmatter_cli:cli"
