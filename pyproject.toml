@@ -95,12 +95,6 @@ target-version = "py311"
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
 
-[tool.wheel]
-universal = "1"
-
-[tool.distutils.bdist_wheel]
-universal = 1
-
 [tool.bumpver]
 current_version = "2023.6.1"
 version_pattern = "YYYY.MM.INC1"
@@ -110,10 +104,9 @@ push = true  # disable for GitHub Actions
 tag = true
 
 [tool.bumpver.file_patterns]
-"frontmatter_cli/__init__.py" = [
-    '__version__ = "{version}"',
-]
-
 "frontmatter_cli/cli.py" = [
     '__version__ = "{version}"',
+]
+"frontmatter_cli/pyproject.toml" = [
+  'version = "2023.6.1"',
 ]
