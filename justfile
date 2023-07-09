@@ -6,7 +6,8 @@
 
 @bootstrap:
     pip install --upgrade pip pip-tools
-    pip install --requirement=requirements.in --upgrade
+    pip install .
+    pip install .[build]
     pre-commit autoupdate
 
 @build:
