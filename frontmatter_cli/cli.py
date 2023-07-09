@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-
 import click
 import frontmatter
-
 from click_default_group import DefaultGroup
 from pydash import set_
 
