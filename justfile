@@ -29,7 +29,8 @@
     nox
 
 @pip-compile:
-    pip-compile
+    pip-compile --resolver=backtracking pyproject.toml
+    # pip-compile --extra=dev --resolver=backtracking pyproject.toml
 
 @push:
     git push origin --all
