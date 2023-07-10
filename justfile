@@ -7,7 +7,7 @@
 @bootstrap:
     pip install --upgrade pip pip-tools
     pip install .
-    pip install .[build]
+    pip install .[dev]
     pre-commit autoupdate
 
 @build:
