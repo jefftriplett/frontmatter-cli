@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "frontmatter-cli"
-version = "2023.7.5"
+version = "2023.7.6"
 description = "Frontmatter CLI tool to make working with frontmatter easier."
 readme = "README.md"
 keywords = [
@@ -107,7 +107,7 @@ target-version = "py311"
 max-complexity = 10
 
 [tool.bumpver]
-current_version = "2023.7.5"
+current_version = "2023.7.6"
 version_pattern = "YYYY.MM.INC1"
 commit_message = ":bookmark: Bump version {old_version} -> {new_version}"
 commit = true
